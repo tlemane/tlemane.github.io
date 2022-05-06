@@ -15,11 +15,20 @@
     div {
       text-align: justify;
     }
+
+    ol > li::marker {
+      font-weight: bold;
+    }
+
     </style>
 </head>
-<div style="float:left; width:10%; padding-bottom: 40px; padding-right: 20px; margin:5px"><img src="./img/p.jpg" style="max-width:100%;" /></div>
-<p><strong>Téo Lemane</strong><br />
-teo.lemane@inria.fr<br />
+
+<div style="float:left; width:10%; padding-bottom: 40px; padding-right: 20px; margin:5px">
+  <img src="./img/p.jpg" style="max-width:100%;" />
+</div>
+
+<b>Téo Lemane</b><br />
+teo.lemane@inria.fr<br /><br />
 <a href="https://github.com/tlemane"><img src="./img/logo/git20.png" alt="git" /></a><br />
 <a href="https://github.com/tlemane"><img src="./img/logo/twitter.png" alt="twitter" /></a>
 
@@ -27,23 +36,29 @@ teo.lemane@inria.fr<br />
 <div style="clear:both">
   <p>I’m a PhD student in bioinformatics in the <a href="https://team.inria.fr/genscale/">Genscale</a> team under the supervision of <a href="http://people.rennes.inria.fr/Pierre.Peterlongo/">Pierre Peterlongo</a> and <a href="http://rayan.chikhi.name/">Rayan Chikhi</a>. This thesis project aims to develop bioinformatics method for detection of neurodegenerative structural variants using k-mers matrices. It focus on making the computational tools necessary to scale the concept of k-mers matrices to hundreds whole-genome human sequencing, and propose an implementation of a structural variant detection tool based on this technique. In general terms, I’m highly interested by algorithms and data structures and their applications on biological sequences.</p>
 
-  <p><strong>Publications</strong><br />
+  <h3>Publications</h3>
+  <ol reversed>
+    <li>T. Lemane, P. Medvedev, R. Chikhi, P. Peterlongo, <b>kmtricks: Efficient and flexible construction of Bloom filters for large sequencing data collections</b>, Bioinformatics Advances, 2022. [<a href="./pdf/Lemane2022.pdf"><b>PDF</b></a>]</li>
+    <li>G. Siekaniec, E. Roux, T. Lemane, E. Guédon, J. Nicolas, <b>Identification of isolated or mixed strains from long reads: a challenge met on Streptococcus thermophilus using a MinION sequencer</b>, Microbial Genomics, 2021. [<a href="./pdf/Siekaniec2021.pdf"><b>PDF</b></a>]</li>
+  </ol>
 
-  - T. Lemane, P. Medvedev, R. Chikhi, P. Peterlongo, <strong>kmtricks: Efficient and flexible construction of Bloom filters for large sequencing data collections</strong>, Bioinformatics Advances, 2022. [<a href="./pdf/Lemane2022.pdf"><strong>PDF</strong></a>]<br />
-  - G. Siekaniec, E. Roux, T. Lemane, E. Guédon, J. Nicolas, <strong>Identification of isolated or mixed strains from long reads: a challenge met on Streptococcus thermophilus using a MinION sequencer</strong>, Microbial Genomics, 2021. [<a href="./pdf/Siekaniec2021.pdf"><strong>PDF</strong></a>]<br />
+  <h3>Software</h3>
+  <ul>
+    <li><a href="https://github.com/tlemane/kmtricks"><b>kmtricks</b></a>:
+      kmtricks is a tool suite for counting kmers, and constructing bloom filters or counted kmer matrices from large and numerous read sets.</li>
+  </ul>
 
+  <h3>Talks</h3>
+  <ul>
+    <li><a href="https://seqbim.cnrs.fr/seqbim-2021/"><b>SeqBIM 2021</b></a> Advances in k-mer matrix construction for analysis of large sequencing collections. [<a href="./pdf/seqBim2021.pdf">slides</a>]</li>
+    <li><a href="https://seqbim2020.sciencesconf.org/"><b>SeqBIM 2020</b></a> kmtricks: modular k-mer count matrix and Bloom filter construction for large read collections [<a href="./pdf/kmtricks_seqBim2020.pdf">slides</a>]</li>
+    <li><a href="https://dsb-meeting.github.io/DSB2020/"><b>DSB 2020</b></a> HowDeSBT and Simka wedding: what as been done and what we plan to do ? [<a href="./pdf/howde_simka_dsb2020.pdf">slides</a>]</li>
+  </ul>
 
-  <p><strong>Software</strong><br />
-  <a href="https://github.com/tlemane/kmtricks"><strong>kmtricks</strong></a><br />
-  kmtricks is a tool suite for counting kmers, and constructing bloom filters or counted kmer matrices from large and numerous read sets.</p>
+  <h3>Teaching</h3>
 
-  <p><strong>Talks</strong><br />
-  - <a href="https://seqbim.cnrs.fr/seqbim-2021/"><strong>SeqBIM 2021</strong></a> Advances in k-mer matrix construction for analysis of large sequencing collections. [<a href="./pdf/seqBim2021.pdf">slides</a>]<br />
-  - <a href="https://seqbim2020.sciencesconf.org/"><strong>SeqBIM 2020</strong></a> kmtricks: modular k-mer count matrix and Bloom filter construction for large read collections [<a href="./pdf/kmtricks_seqBim2020.pdf">slides</a>]<br />
-  - <a href="https://dsb-meeting.github.io/DSB2020/"><strong>DSB 2020</strong></a> HowDeSBT and Simka wedding: what as been done and what we plan to do ? [<a href="./pdf/howde_simka_dsb2020.pdf">slides</a>]
-  </p>
-
-  <p><strong>Teaching</strong><br />
-  - <strong>2019-now:</strong> Strings algorithms and bioinformatics, MSc1 Software Engineering, ISTIC</p>
-</div>
+  <ul>
+    <li><b>2019-now:</b> Strings algorithms and bioinformatics, MSc1 Software Engineering, ISTIC</li>
+  </ul>
+  </div>
 </html>
