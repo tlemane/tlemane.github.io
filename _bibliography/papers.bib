@@ -1,0 +1,182 @@
+---
+---
+
+@article{talk_jobim_2022,
+	title = {kmtricks: creating bloom filters for indexing large sequencing data collection},
+	journal = {JOBIM},
+	talks = {true},
+	year = {2022},
+	slides = {slides/JOBIM2022.pdf}
+}
+
+@article{talk_seqbim_2020,
+	title = {kmtricks: modular k-mer count matrix and Bloom filter construction for large read collections},
+	journal = {SeqBIM},
+	talks = {true},
+	year = {2020},
+	slides = {slides/kmtricks_seqBim2020.pdf}
+}
+
+@article{talk_seqbim_2021,
+	title = {Advances in k-mer matrix construction for analysis of large sequencing collections},
+	journal = {SeqBIM},
+	talks = {true},
+	year = {2021},
+	slides = {slides/seqBim2021.pdf}
+}
+
+@article{talk_dsb_2020,
+	title = {HowDeSBT and Simka wedding: what as been done and what we plan to do ?},
+	journal = {DSB},
+	talks = {true},
+	year = {2020},
+	slides = {slides/howde_simka_dsb.pdf}
+}
+
+@article{phd,
+	title = {PhD thesis: Indexing and analysis of large sequencing collections using k-mer matrices},
+	author = {Lemane, Téo},
+	journal = {Université de Rennes 1 & Inria},
+	month = dec,
+	year = {2022},
+	pdf = {papers/phd.pdf}
+}
+
+@article{lemane_indexing_2024,
+	title = {Indexing and real-time user-friendly queries in terabyte-sized complex genomic datasets with kmindex and {ORA}},
+	volume = {4},
+	copyright = {2024 The Author(s), under exclusive licence to Springer Nature America, Inc.},
+	issn = {2662-8457},
+	url = {https://www.nature.com/articles/s43588-024-00596-6},
+	doi = {10.1038/s43588-024-00596-6},
+	abstract = {Public sequencing databases contain vast amounts of biological information, yet they are largely underutilized as it is challenging to efficiently search them for any sequence(s) of interest. We present kmindex, an approach that can index thousands of metagenomes and perform sequence searches in a fraction of a second. The index construction is an order of magnitude faster than previous methods, while search times are two orders of magnitude faster. With negligible false positive rates below 0.01\%, kmindex outperforms the precision of existing approaches by four orders of magnitude. Here we demonstrate the scalability of kmindex by successfully indexing 1,393 marine seawater metagenome samples from the Tara Oceans project. Additionally, we introduce the publicly accessible web server Ocean Read Atlas, which enables real-time queries on the Tara Oceans dataset.},
+	language = {en},
+	number = {2},
+	urldate = {2024-06-12},
+	journal = {Nature Computational Science},
+	author = {Lemane, Téo and Lezzoche, Nolan and Lecubin, Julien and Pelletier, Eric and Lescot, Magali and Chikhi, Rayan and Peterlongo, Pierre},
+	month = feb,
+	year = {2024},
+	note = {Publisher: Nature Publishing Group},
+	keywords = {Genome informatics, Software},
+	pages = {104--109},
+  selected = {true},
+    github = {https://github.com/tlemane/kmindex.git}
+}
+
+@article{lemane_kmtricks_2022,
+	title = {kmtricks: efficient and flexible construction of {Bloom} filters for large sequencing data collections},
+	volume = {2},
+	issn = {2635-0041},
+	shorttitle = {kmtricks},
+	url = {https://doi.org/10.1093/bioadv/vbac029},
+	doi = {10.1093/bioadv/vbac029},
+	abstract = {When indexing large collections of short-read sequencing data, a common operation that has now been implemented in several tools (Sequence Bloom Trees and variants, BIGSI) is to construct a collection of Bloom filters, one per sample. Each Bloom filter is used to represent a set of k-mers which approximates the desired set of all the non-erroneous k-mers present in the sample. However, this approximation is imperfect, especially in the case of metagenomics data. Erroneous but abundant k-mers are wrongly included, and non-erroneous but low-abundant ones are wrongly discarded. We propose kmtricks, a novel approach for generating Bloom filters from terabase-sized collections of sequencing data. Our main contributions are (i) an efficient method for jointly counting k-mers across multiple samples, including a streamlined Bloom filter construction by directly counting, partitioning and sorting hashes instead of k-mers, which is approximately four times faster than state-of-the-art tools; (ii) a novel technique that takes advantage of joint counting to preserve low-abundant k-mers present in several samples, improving the recovery of non-erroneous k-mers. Our experiments highlight that this technique preserves around 8× more k-mers than the usual yet crude filtering of low-abundance k-mers in a large metagenomics dataset.https://github.com/tlemane/kmtricks.Supplementary data are available at Bioinformatics Advances online.},
+	number = {1},
+	urldate = {2024-06-12},
+	journal = {Bioinformatics Advances},
+	author = {Lemane, Téo and Medvedev, Paul and Chikhi, Rayan and Peterlongo, Pierre},
+	month = jan,
+	year = {2022},
+	pages = {vbac029},
+    selected = {true},
+    pdf = {papers/Lemane2022.pdf},
+	github = {https://github.com/tlemane/kmtricks.git}
+}
+
+@article{lemane_kmdiff_2022,
+	title = {kmdiff, large-scale and user-friendly differential k-mer analyses},
+	volume = {38},
+	issn = {1367-4803},
+	url = {https://doi.org/10.1093/bioinformatics/btac689},
+	doi = {10.1093/bioinformatics/btac689},
+	abstract = {Genome wide association studies elucidate links between genotypes and phenotypes. Recent studies point out the interest of conducting such experiments using k-mers as the base signal instead of single-nucleotide polymorphisms. We propose a tool, kmdiff, that performs differential k-mer analyses on large sequencing cohorts in an order of magnitude less time and memory than previously possible.https://github.com/tlemane/kmdiffSupplementary data are available at Bioinformatics online.},
+	number = {24},
+	urldate = {2024-06-12},
+	journal = {Bioinformatics},
+	author = {Lemane, Téo and Chikhi, Rayan and Peterlongo, Pierre},
+	month = dec,
+	year = {2022},
+	pages = {5443--5445},
+    pdf = {papers/LemaneKmdiff2022.pdf},
+	github = {https://github.com/tlemane/kmdiff.git},
+	selected = {true}
+}
+
+@article{dufresne_k-mer_2022,
+	title = {The {K}-mer {File} {Format}: a standardized and compact disk representation of sets of k-mers},
+	volume = {38},
+	issn = {1367-4803},
+	shorttitle = {The {K}-mer {File} {Format}},
+	url = {https://doi.org/10.1093/bioinformatics/btac528},
+	doi = {10.1093/bioinformatics/btac528},
+	abstract = {Bioinformatics applications increasingly rely on ad hoc disk storage of k-mer sets, e.g. for de Bruijn graphs or alignment indexes. Here, we introduce the K-mer File Format as a general lossless framework for storing and manipulating k-mer sets, realizing space savings of 3–5× compared to other formats, and bringing interoperability across tools.Format specification, C++/Rust API, tools: https://github.com/Kmer-File-Format/.Supplementary data are available at Bioinformatics online.},
+	number = {18},
+	urldate = {2024-06-12},
+	journal = {Bioinformatics},
+	author = {Dufresne, Yoann and Lemane, Teo and Marijon, Pierre and Peterlongo, Pierre and Rahman, Amatur and Kokot, Marek and Medvedev, Paul and Deorowicz, Sebastian and Chikhi, Rayan},
+	month = sep,
+	year = {2022},
+	pages = {4423--4425},
+	pdf = {papers/Dufresne2022.pdf},
+	github = {https://github.com/Kmer-File-Format}
+}
+
+@article{duitamagonzalez_decom_2023,
+	title = {{decOM}: similarity-based microbial source tracking of ancient oral samples using k-mer-based methods},
+	volume = {11},
+	issn = {2049-2618},
+	shorttitle = {{decOM}},
+	url = {https://doi.org/10.1186/s40168-023-01670-3},
+	doi = {10.1186/s40168-023-01670-3},
+	abstract = {The analysis of ancient oral metagenomes from archaeological human and animal samples is largely confounded by contaminant DNA sequences from modern and environmental sources. Existing methods for Microbial Source Tracking (MST) estimate the proportions of environmental sources, but do not perform well on ancient metagenomes. We developed a novel method called decOM for Microbial Source Tracking and classification of ancient and modern metagenomic samples using k-mer matrices.},
+	number = {1},
+	urldate = {2024-06-12},
+	journal = {Microbiome},
+	author = {Duitama González, Camila and Vicedomini, Riccardo and Lemane, Téo and Rascovan, Nicolas and Richard, Hugues and Chikhi, Rayan},
+	month = nov,
+	year = {2023},
+	keywords = {Ancient metagenomics, k-mer matrix, Microbial source tracking, Paleogenomics},
+	pages = {243},
+	github = {https://github.com/CamilaDuitama/decOM}
+}
+
+@article{willink_genomics_2024,
+	title = {The genomics and evolution of inter-sexual mimicry and female-limited polymorphisms in damselflies},
+	volume = {8},
+	copyright = {2023 The Author(s)},
+	issn = {2397-334X},
+	url = {https://www.nature.com/articles/s41559-023-02243-1},
+	doi = {10.1038/s41559-023-02243-1},
+	abstract = {Sex-limited morphs can provide profound insights into the evolution and genomic architecture of complex phenotypes. Inter-sexual mimicry is one particular type of sex-limited polymorphism in which a novel morph resembles the opposite sex. While inter-sexual mimics are known in both sexes and a diverse range of animals, their evolutionary origin is poorly understood. Here, we investigated the genomic basis of female-limited morphs and male mimicry in the common bluetail damselfly. Differential gene expression between morphs has been documented in damselflies, but no causal locus has been previously identified. We found that male mimicry originated in an ancestrally sexually dimorphic lineage in association with multiple structural changes, probably driven by transposable element activity. These changes resulted in {\textasciitilde}900 kb of novel genomic content that is partly shared by male mimics in a close relative, indicating that male mimicry is a trans-species polymorphism. More recently, a third morph originated following the translocation of part of the male-mimicry sequence into a genomic position {\textasciitilde}3.5 mb apart. We provide evidence of balancing selection maintaining male mimicry, in line with previous field population studies. Our results underscore how structural variants affecting a handful of potentially regulatory genes and morph-specific genes can give rise to novel and complex phenotypic polymorphisms.},
+	language = {en},
+	number = {1},
+	urldate = {2024-06-12},
+	journal = {Nature Ecology \& Evolution},
+	author = {Willink, Beatriz and Tunström, Kalle and Nilén, Sofie and Chikhi, Rayan and Lemane, Téo and Takahashi, Michihiko and Takahashi, Yuma and Svensson, Erik I. and Wheat, Christopher West},
+	month = jan,
+	year = {2024},
+	note = {Publisher: Nature Publishing Group},
+	keywords = {Comparative genomics, Evolutionary genetics},
+	pages = {83--97},
+	github = {https://github.com/bwillink/Morph-locus}
+}
+
+@article{siekaniec_identification_2021,
+	title = {Identification of isolated or mixed strains from long reads: a challenge met on {Streptococcus} thermophilus using a {MinION} sequencer},
+	volume = {7},
+	issn = {2057-5858},
+	shorttitle = {Identification of isolated or mixed strains from long reads},
+	url = {https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000654},
+	doi = {10.1099/mgen.0.000654},
+	abstract = {This study aimed to provide efficient recognition of bacterial strains on personal computers from MinION (Nanopore) long read data. Thanks to the fall in sequencing costs, the identification of bacteria can now proceed by whole genome sequencing. MinION is a fast, but highly error-prone sequencing device and it is a challenge to successfully identify the strain content of unknown simple or complex microbial samples. It is heavily constrained by memory management and fast access to the read and genome fragments. Our strategy involves three steps: indexing of known genomic sequences for a given or several bacterial species; a request process to assign a read to a strain by matching it to the closest reference genomes; and a final step looking for a minimum set of strains that best explains the observed reads. We have applied our method, called ORI, on 77 strains of Streptococcus thermophilus . We worked on several genomic distances and obtained a detailed classification of the strains, together with a criterion that allows merging of what we termed ‘sibling’ strains, only separated by a few mutations. Overall, isolated strains can be safely recognized from MinION data. For mixtures of several non-sibling strains, results depend on strain abundance.},
+	number = {11},
+	urldate = {2024-06-12},
+	journal = {Microbial Genomics},
+	author = {Siekaniec, Grégoire and Roux, Emeline and Lemane, Téo and Guédon, Eric and Nicolas, Jacques},
+	year = {2021},
+	note = {Publisher: Microbiology Society,},
+	pages = {000654},
+	pdf = {papers/Siekaniec2021.pdf},
+	github = {https://github.com/gsiekaniec/ORI}
+}

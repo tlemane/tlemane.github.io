@@ -1,0 +1,27 @@
+"peterlongo":
+  - firstname: ["Pierre", "P."]
+    url: https://people.rennes.inria.fr/Pierre.Peterlongo/
+
+"chikhi":
+  - firstname: ["Rayan", "R."]
+    url: http://rayan.chikhi.name
+
+"medvedev":
+  - firstname: ["Paul", "P."]
+    url: https://medvedevgroup.com/principal-investigator/
+
+"duitama?gonzalez":
+  - firstname: ["Camila", "C."]
+    url: https://camiladuitama.github.io/gradfolio/
+
+"vicedomini":
+  - firstname: ["Riccardo", "R."]
+    url: https://rvicedomini.github.io/
+
+"lescot":
+  - firstname: ["Magali", "M."]
+    url: https://www.mio.osupytheas.fr/fr/magali-lescot
+
+"dufresne":
+  - firstname: ["Yoann", "Y."]
+    url: https://yoann-dufresne.github.io/
