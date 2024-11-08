@@ -206,7 +206,11 @@
         {% endif %}
       {% endif %}
       {% if entry.url %}
-        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+        {% if entry.preprint %}
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Preprint</a>
+        {% else %}
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+        {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
