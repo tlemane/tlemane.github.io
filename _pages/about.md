@@ -6,7 +6,7 @@ subtitle:
 cv_pdf: cv.pdf
 profile:
   align: right
-  image: p.jpg
+  image: p2.jpg
   image_circular: true # crops the image to make it circular
   more_info: #
 
