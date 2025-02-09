@@ -15,6 +15,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral researcher in the <a href="https://lage.genoscope.cns.fr/">LAGE</a> team at <a href="https://jacob.cea.fr/drf/ifrancoisjacob/Pages/Departements/Genoscope.aspx">Genoscope</a>. My research work concerns algorithms and data structures for large-scale processing of complex sequencing banks as metagenomes from the <a href="https://fondationtaraocean.org/en/home/">Tara projet</a> with a focus on large-scale indexing problems. Recently, I have also started developing user interfaces by leveraging these sequence indexes. Using these tools, we recently released the first SRA-scale k-mer search engine: [`Logan Search`](/news/logan-search)
+I am a postdoctoral researcher in the <a href="https://labgem.genoscope.cns.fr/">LABGeM</a> team at <a href="https://jacob.cea.fr/drf/ifrancoisjacob/Pages/Departements/Genoscope.aspx">Genoscope</a>, working on computational methods for read classification using pangenome graphs for antimicrobial resistance tracking as part of the <a href="https://www.abromics.fr/">ABRomics project</a>.
 
-Previously I have developed methods and [tools](/tools) for constructing, streaming and filtering k-mers matrices from large sequencing collections.
+Broadly, my work focuses on algorithms and data structures for large-scale processing of sequencing collections, with an emphasis on indexing problems. Recently, we released the first k-mer search engine, [`Logan Search`](/news/logan-search), capable of querying the largest sequencing data repository, the <a href="https://www.ncbi.nlm.nih.gov/sra">Sequence Read Archive</a> (SRA).
